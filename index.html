@@ -18,10 +18,25 @@
     <!-- Header with fixed nav-bar -->
     <header>
 
-      <nav>
+        <!-- Bootstrap Nav with hamburger menù -->
         <nav class="nav navbar-default navbar-fixed-top">
-        </nav>
-      </nav>
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <!-- hamburger button -->
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <!-- sr only changes display on the span only with screen readers devices -->
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+
+              </button>
+              <a class="navbar-brand" href="#">
+                <img src="img/logo.png">
+              </a>
+            </div>
+          </div> <!-- container end -->
+        </nav> <!-- nav end -->
 
     </header>
 

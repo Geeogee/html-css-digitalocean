@@ -58,16 +58,35 @@ footer [class*="col-"] {
 
 /* Mobile First */
 
-/* header */
-header {
-  /*debug*/
-  background-color: red;
+/* Header */
+
+/* Nav */
+.nav {
+  background-color: #FFF;
   height: 80px;
+  line-height: 80px;
 }
 
-.nav {
-  height: 80px;
+.nav .navbar-toggle {
+  height: 40px;
+  margin-top: 20px;
+  border: 0;
 }
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #3a8aff;
+}
+
+.nav .navbar-brand > img {
+  width: 200px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+
+
 
 /* main */
 
@@ -80,4 +99,10 @@ header {
   background-image: url("../img/jumbo.svg");
   /*debug */
   min-height: 500px;
+}
+
+@media all and (min-width: 992px) {
+  .navbar-toggle {
+    display: display
+  }
 }
