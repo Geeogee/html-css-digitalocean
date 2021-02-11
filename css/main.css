@@ -1,0 +1,83 @@
+/* General CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*debug*/
+[class*="col-"] {
+  border: 1px solid #000;
+}
+
+.section-jumbotron [class*="col-"] {
+  background-color: yellow;
+  min-height: 500px;
+}
+
+.section-customers [class*="col-"] {
+  background-color: green;
+  min-height: 100px;
+}
+
+.section-aboutUs [class*="col-"] {
+  background-color: blue;
+  min-height: 200px;
+}
+
+.section-target [class*="col-"] {
+  background-color: pink;
+  min-height: 200px;
+}
+
+.section-features [class*="col-"] {
+  background-color: purple;
+  min-height: 200px;
+}
+
+.section-servers [class*="col-"] {
+  background-color: lightblue;
+  min-height: 200px;
+}
+
+.section-reviews [class*="col-"] {
+  background-color: lightgray;
+  min-height: 200px;
+}
+
+.section-getStarted [class*="col-"] {
+  background-color: red;
+  min-height: 200px;
+}
+
+footer [class*="col-"] {
+  background-color: #031c4e;
+  min-height: 200px;
+}
+
+/* Mobile First */
+
+/* header */
+header {
+  /*debug*/
+  background-color: red;
+  height: 80px;
+}
+
+.nav {
+  height: 80px;
+}
+
+/* main */
+
+/*debug*/
+.container {
+  min-height: 200px;
+}
+
+.section-jumbotron {
+  background-image: url("../img/jumbo.svg");
+  /*debug */
+  min-height: 500px;
+}
