@@ -6,6 +6,12 @@
   box-sizing: border-box;
 }
 
+body {
+  padding-top: 80px;
+  font-family: "Inter", sans-serif;
+  font-size: 10px;
+}
+
 /*debug*/
 [class*="col-"] {
   border: 1px solid #000;
@@ -57,36 +63,44 @@ footer [class*="col-"] {
 }
 
 /* Mobile First */
-
-/* Header */
-
 /* Nav */
-.nav {
-  background-color: #FFF;
-  height: 80px;
-  line-height: 80px;
+.navbar {
+  border-radius: 0;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
 }
 
-.nav .navbar-toggle {
-  height: 40px;
-  margin-top: 20px;
+.navbar-brand {
+  float: left;
+  height: 80px;
+  padding: 0 15px;
+}
+
+.navbar .navbar-brand > img {
+  width: 200px;
+  height: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.navbar-default .navbar-toggle {
   border: 0;
+  margin: 0;
+  height: 40px;
+  width: 40px;
+  margin-top: 20px;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #3a8aff;
 }
 
-.nav .navbar-brand > img {
-  width: 200px;
-  height: auto;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-
+.navbar-nav > li > a {
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 80px;
 }
-
-
 
 /* main */
 
@@ -101,8 +115,63 @@ footer [class*="col-"] {
   min-height: 500px;
 }
 
-@media all and (min-width: 992px) {
-  .navbar-toggle {
-    display: display
+
+@media all and (min-width: 768px) {
+
+  /* Display hamburger over 767px */
+  .navbar-header {
+    float: none;
   }
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
+
+  .navbar-nav {
+    float: none !important;
+  }
+
+  .navbar-nav > li {
+    float: none;
+  }
+
+}
+
+@media all and (min-width: 1200px) {
+
+  /* Header */
+  /* Reset display for nav links*/
+  .navbar-header {
+    float: left;
+
+  }
+  .navbar-toggle {
+    display: none;
+  }
+
+  .navbar-collapse.collapse {
+    display: block !important;
+  }
+
+  .navbar-nav {
+    float: left !important;
+  }
+
+  .navbar-nav > li {
+    float: left;
+  }
+
+  .navbar-default .navbar-nav > li > a {
+    color: #031c4e;
+    font-size: 1.7rem;
+    font-weight: 500;
+  }
+
+  .navbar-nav.navbar-right {
+    float: right !important;
+  }
+
 }
