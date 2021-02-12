@@ -12,13 +12,17 @@ body {
   font-size: 10px;
 }
 
+.white-text {
+  color: #FFF;
+}
+
 /*debug*/
 [class*="col-"] {
   border: 1px solid #000;
 }
 
 .section-jumbotron [class*="col-"] {
-  background-color: yellow;
+  border: 0;
   min-height: 500px;
 }
 
@@ -126,6 +130,56 @@ footer [class*="col-"] {
   background-image: url("../img/jumbo.svg");
   /*debug */
   min-height: 500px;
+  padding-top: 60px;
+}
+
+.section-jumbotron .text-container {
+  min-height: 350px;
+  background-color: red;
+}
+
+.section-jumbotron h1 {
+  font-weight: 900;
+  font-size: 6rem;
+}
+
+.section-jumbotron p {
+  color: #bbcdff;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.section-jumbotron .login-panel {
+  min-height: 350px;
+  width: 100%;
+  background-color: #FFF;
+  border-radius: 5px;
+}
+
+.section-jumbotron .login-panel h3 {
+  text-align: center;
+  color: #031c4e;
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.section-jumbotron .login-panel .getStarted {
+  color: #006aff;
+}
+
+.section-jumbotron .login-panel input {
+  width: calc(100% - 20px);
+  padding: 10px 20px;
+  margin: 5px 10px;
+  border: 1px solid #EEE;
+  border-radius: 5px;
+  color: #757575;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.section-jumbotron .login-panel input:focus {
+  outline: 0;
 }
 
 
@@ -177,9 +231,14 @@ footer [class*="col-"] {
     float: left;
   }
 
-
   .navbar-nav.navbar-right {
     float: right !important;
+  }
+
+  /* Main */
+  /* Section jumnbotron*/
+  .section-jumbotron .text-container {
+    width: 95%;
   }
 
 }
