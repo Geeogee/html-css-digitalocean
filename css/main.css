@@ -47,11 +47,24 @@ body {
   font-size: 1.2rem;
 }
 
+.normal-text {
+  font-size: 1.5rem;
+}
+
 .medium-text {
   font-size: 2rem;
 }
 
+h3 {
+ font-weight: 600;
+ font-size: 3rem;
+}
 
+h4 {
+  font-weight: 600;
+}
+
+/* Links that act like buttons */
 .fullW-button-link {
   display: block;
   padding: 10px;
@@ -96,6 +109,10 @@ main section {
   padding: 30px 0;
 }
 
+section h3 {
+  text-align: center;
+}
+
 .section-jumbotron [class*="col-"] {
   border: 0;
 }
@@ -105,7 +122,7 @@ main section {
 }
 
 .section-aboutUs [class*="col-"] {
-  background-color: blue;
+  border: 0;
   min-height: 200px;
 }
 
@@ -226,12 +243,6 @@ footer [class*="col-"] {
   border-radius: 5px;
 }
 
-.section-jumbotron .login-panel h3 {
-  text-align: center;
-  font-weight: 600;
-  font-size: 3rem;
-}
-
 .section-jumbotron .login-panel input {
   width: calc(100% - 20px);
   padding: 10px 20px;
@@ -247,8 +258,7 @@ footer [class*="col-"] {
   outline: 0;
 }
 
-
-/* section customers */
+/* Section customers */
 .section-customers {
   background-color: #f3f5f9;
 }
@@ -261,15 +271,63 @@ footer [class*="col-"] {
   font-weight: 600;
 }
 
-
-
 [class*="col-"] > img {
   margin: 0;
   height: 150px;
   max-width: 100%;
 }
 
-@media all and (min-width: 768px) and (max-width: 1200px) {
+/* Section About US */
+.section-aboutUs .categories {
+  list-style-type: none;
+  border-left: 2px solid #CCC;
+  padding-left: 20px;
+}
+
+.categories li {
+  padding: 10px 0;
+}
+
+.categories a {
+  color: inherit;
+}
+
+.section-aboutUs .box-image {
+  width: 50px;
+  height: 50px;
+}
+
+.section-aboutUs .box-image > img {
+  width: 100%;
+}
+
+.section-aboutUs .content {
+  margin-top: 20px;
+}
+
+@media all and (min-width: 768px) {
+  /* Display hamburger over 767px */
+  .navbar-header {
+    float: none;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
+
+  .navbar-nav {
+    float: none !important;
+  }
+
+  .navbar-nav > li {
+    float: none;
+  }
+}
+
+@media all and (min-width: 992px) {
 
   /* Display hamburger over 767px */
   .navbar-header {
@@ -298,7 +356,11 @@ footer [class*="col-"] {
     font-size: 2.5rem;
   }
 
-  /* section customers */
+  /* section About Us */
+  .section-aboutUs .content {
+    min-height: 170px;
+    }
+  }
 
 }
 
@@ -336,6 +398,8 @@ footer [class*="col-"] {
     width: 95%;
   }
 
-  /* Section customers */
+  .section-aboutUs .content {
+    min-height: 170px;
+}
 
 }
