@@ -67,7 +67,7 @@ footer [class*="col-"] {
 .navbar {
   border-radius: 0;
   margin-bottom: 20px;
-  border: 1px solid transparent;
+  background-color: #FFF;
 }
 
 .navbar-brand {
@@ -96,10 +96,23 @@ footer [class*="col-"] {
   background-color: #3a8aff;
 }
 
+.navbar-default .navbar-nav > li > a {
+  color: #031c4e;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
 .navbar-nav > li > a {
   padding-top: 0;
   padding-bottom: 0;
   line-height: 80px;
+}
+
+.nav > li > a.btn {
+  display: inline;
+  padding: 10px 15px;
+  color: #006aff;
+  border: 1px solid #006aff;
 }
 
 /* main */
@@ -164,11 +177,6 @@ footer [class*="col-"] {
     float: left;
   }
 
-  .navbar-default .navbar-nav > li > a {
-    color: #031c4e;
-    font-size: 1.7rem;
-    font-weight: 500;
-  }
 
   .navbar-nav.navbar-right {
     float: right !important;
