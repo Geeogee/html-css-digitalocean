@@ -370,7 +370,6 @@ footer [class*="col-"] {
   /* section About Us */
   .section-aboutUs .content {
     min-height: 170px;
-    }
   }
 
   /* section target */
@@ -412,7 +411,7 @@ footer [class*="col-"] {
     width: 95%;
   }
 
-  .section-aboutUs .content {
+  .section-aboutus .content {
     min-height: 170px;
   }
 
