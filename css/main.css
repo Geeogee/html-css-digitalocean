@@ -12,9 +12,45 @@ body {
   font-size: 10px;
 }
 
+/* Padding */
+
+.pa1 {
+  padding: 10px;
+}
+
+/* Typography */
 .white-text {
   color: #FFF;
 }
+
+.grey-text {
+  color: #5c6a88;
+}
+
+.darkgrey-text {
+  color: #626262;
+}
+
+.lightblue-text {
+  color: #bbcdff;
+}
+
+.blue-text {
+  color: #006aff;
+}
+
+.darkblue-text {
+  color: #031c4e;
+}
+
+.small-text {
+  font-size: 1.2rem;
+}
+
+.medium-text {
+  font-size: 2rem;
+}
+
 
 .fullW-button-link {
   display: block;
@@ -64,11 +100,8 @@ main section {
   border: 0;
 }
 
-
-
 .section-customers [class*="col-"] {
-  background-color: green;
-  min-height: 100px;
+  border: 0;
 }
 
 .section-aboutUs [class*="col-"] {
@@ -141,7 +174,7 @@ footer [class*="col-"] {
 }
 
 .navbar-default .navbar-nav > li > a {
-  color: #031c4e;
+  color: inherit;
   font-size: 1.7rem;
   font-weight: 500;
 }
@@ -166,6 +199,7 @@ footer [class*="col-"] {
   min-height: 200px;
 }
 
+/* Section Jumbotron */
 .section-jumbotron {
   padding-top: 60px;
   background-image: url("../img/jumbo.svg");
@@ -181,8 +215,6 @@ footer [class*="col-"] {
 }
 
 .section-jumbotron p {
-  color: #bbcdff;
-  font-size: 2rem;
   font-weight: 400;
 }
 
@@ -196,13 +228,8 @@ footer [class*="col-"] {
 
 .section-jumbotron .login-panel h3 {
   text-align: center;
-  color: #031c4e;
   font-weight: 600;
   font-size: 3rem;
-}
-
-.section-jumbotron .login-panel .getStarted {
-  color: #006aff;
 }
 
 .section-jumbotron .login-panel input {
@@ -220,6 +247,27 @@ footer [class*="col-"] {
   outline: 0;
 }
 
+
+/* section customers */
+.section-customers {
+  background-color: #f3f5f9;
+}
+.section-customers [class*="col-"] {
+  text-align: center;
+}
+
+.section-customers .text-container {
+  text-align: center;
+  font-weight: 600;
+}
+
+
+
+[class*="col-"] > img {
+  margin: 0;
+  height: 150px;
+  max-width: 100%;
+}
 
 @media all and (min-width: 768px) and (max-width: 1200px) {
 
@@ -249,6 +297,8 @@ footer [class*="col-"] {
   .section-jumbotron .login-panel h3 {
     font-size: 2.5rem;
   }
+
+  /* section customers */
 
 }
 
@@ -285,5 +335,7 @@ footer [class*="col-"] {
   .section-jumbotron .text-container {
     width: 95%;
   }
+
+  /* Section customers */
 
 }
