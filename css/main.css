@@ -134,8 +134,7 @@ section h3 {
 }
 
 .section-servers [class*="col-"] {
-  background-color: lightblue;
-  min-height: 200px;
+  border: 0;
 }
 
 .section-reviews [class*="col-"] {
@@ -371,6 +370,33 @@ footer [class*="col-"] {
 .section-features a {
   font-weight: 600;
 }
+
+.section-servers {
+  background-image: linear-gradient(to bottom, #0048c5, #00209b);
+}
+
+.section-servers table {
+  font-size: 1.4rem;
+  background-color: transparent;
+  color: #FFF;
+}
+
+.section-servers table tr:first-child {
+  border-top: 0;
+}
+
+.section-servers .table td:nth-child(2) {
+  width: 60%;
+  color: #b5c4e7;
+}
+
+.section-servers .table td:nth-child(3) a {
+  white-space: nowrap;
+  color: #00d5d1;
+}
+
+
+
 
 @media all and (min-width: 768px)  {
 
