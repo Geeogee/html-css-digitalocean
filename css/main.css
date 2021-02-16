@@ -19,6 +19,7 @@ body {
 }
 
 /* Typography */
+/* Font colors */
 .white-text {
   color: #FFF;
 }
@@ -43,6 +44,7 @@ body {
   color: #031c4e;
 }
 
+/* Font sizes */
 .small-text {
   font-size: 1.2rem;
 }
@@ -65,6 +67,7 @@ h4 {
 }
 
 /* Links that act like buttons */
+/* Full width link button */
 .fullW-button-link {
   display: block;
   padding: 10px;
@@ -186,6 +189,14 @@ section h3 {
   font-weight: 500;
 }
 
+.navbar-nav li:hover {
+  background-color: #f3f5f9;
+}
+
+.navbar-nav li.no-hover:hover {
+  background-color: #FFF;
+}
+
 .navbar-nav > li > a {
   padding-top: 0;
   padding-bottom: 0;
@@ -199,12 +210,12 @@ section h3 {
   border: 1px solid #006aff;
 }
 
-/* main */
-
-/*debug*/
-.container {
-  min-height: 200px;
+.nav > li > a.btn:hover {
+  background-color: #006aff;
+  color: #FFF;
 }
+
+/* main */
 
 /* Section Jumbotron */
 .section-jumbotron {
@@ -374,8 +385,14 @@ section h3 {
 
 .section-getstarted .btn-default {
   color: #006aff;
+  border: 1px solid #006aff;
   padding: 10px 20px;
   font-weight: 600;
+}
+
+.section-getstarted .btn-default:hover {
+  background-color: #006aff;
+  color: #FFF;
 }
 
 /* Footer */
@@ -404,6 +421,10 @@ footer .social-links li a {
   font-size: inherit;
 }
 
+footer .social-links li a:hover {
+  color: #FFF;
+}
+
 /* Footer nav links */
 footer .nav-links,
 footer .nav-links ul {
@@ -419,6 +440,10 @@ footer .nav-links a {
   color: #a6adbd;
   font-size: 1.5rem;
   font-weight: 400;
+}
+
+footer .nav-links a:hover {
+  color: #FFF;
 }
 
 
