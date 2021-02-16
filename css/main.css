@@ -377,6 +377,10 @@ section h3 {
   position: relative;
 }
 
+.section-reviews .box-image img {
+  max-width: 100%;
+}
+
 /* Section get started */
 .section-getstarted {
   background-image: linear-gradient(to bottom, #0042bb, #00209b);
@@ -447,8 +451,7 @@ footer .nav-links a:hover {
 }
 
 
-
-
+/* SM and MD media query */
 @media all and (min-width: 768px)  {
 
     /* Display hamburger over 767px */
@@ -498,8 +501,8 @@ footer .nav-links a:hover {
   }
 }
 
+/* LG media query */
 @media all and (min-width: 1200px) {
-
   /* Header */
   /* Reset display for nav links*/
   .navbar-header {
